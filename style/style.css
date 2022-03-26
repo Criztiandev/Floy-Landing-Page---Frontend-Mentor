@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root{
+    --primary-very-dark-blue: hsl(243, 87%, 12%);
+    --primary-very-dark-blue-active: hsl(243, 96%, 69%);
+    --primary-desaturated-blue: hsl(238, 22%, 44%);
+
+    --accent-bright-blue :  hsl(224, 93%, 58%);
+    --accent-bright-blue-active :  hsl(224, 100%, 75%);
+    --accent-moderate-cyan: hsl(170, 45%, 43%);
+    --accent-moderate-cyan-active: hsl(171, 55%, 81%);
+
+    --neutral-light-gray-blue : #f6f6fe;
+    --neutral-light-gray: hsl(0deg 3% 46%);
+    
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd{
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol{
+  list-style:none;
+  padding: 0;
+}
+
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+body{
+  background: linear-gradient( rgba(255,255,255,1) 30%, rgba(246,246,254,1) 57%);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+
+    
+}
+
+#header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 4rem;
+}
+
+#header > img{
+  width: 20%;
+}
+
+#nav-bar{
+  width: 60%;
+}
+
+#nav-bar > #nav-list{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-link{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1rem;
+  color: var(--primary-very-dark-bluee);
+  text-decoration: none;
+}
+
+.hero{
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+#details{
+  text-align: center;
+  margin: 2rem 0rem;
+}
+
+#details header > h1 {
+  color: var(--primary-very-dark-blue);
+  font-size: 1.7rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  margin-bottom:  2rem;
+}
+
+#details > p {
+  color: var(--primary-very-dark-blue);
+  font-weight: 400;
+}
+
+#form{
+  display: flex;
+  flex-direction: column;
+}
+
+#form > input{
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+#email{
+  border: 1px solid var(--primary-very-dark-blue);
+  margin-bottom: 1rem;
+}
+
+#submit{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: white;
+  background: var(--accent-bright-blue);
+  border: none;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.1);
+}
+
+#submit:hover{
+  background: var(--accent-bright-blue-active);
+}
+
+
+
+#secondary-hero{
+  background: var(--neutral-light-gray-blue);
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+
+#secondary-hero figure > img{
+  margin: auto;
+  width: 80%;
+  object-fit: cover;
+  margin-bottom: 4rem;
+}
+
+#secondary-details{
+ padding: 1rem;
+}
+
+#secondary-details header > h1{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#secondary-details > p{
+  color: var(--neutral-light-gray);
+  margin-bottom: 1rem;
+}
+
+#secondary-link{
+  color: var(--accent-moderate-cyan);
+  width: 55%;
+  font-size: 1rem;
+  margin: auto;
+  padding: 0.5rem 0;
+
+  text-decoration: none;
+  
+  border-bottom: 2px solid var(--accent-moderate-cyan);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+#secondary-link:hover , a:hover{
+  color: var(--accent-moderate-cyan-active);
+  border-bottom: 2px solid var(--accent-moderate-cyan-active);
+}
+
+#secondary-link > img{
+  width: 15%;
+}
+
+#testimonial{
+  margin-top: 2rem;
+}
+
+.testimonial-card{
+  background: white;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2rem;
+  padding: 0.5rem 1rem;
+
+  border-radius: 4px;
+  box-shadow: 5px 5px 8px rgb(0, 0, 0,0.1);
+
+}
+
+#testimonial > img{
+  margin-bottom: 0.5rem;
+}
+
+#testimonial > p{
+  color: var(--primary-very-dark-blue);
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+
+}
+
+#profile-card{
+  display: flex;
+  align-items: center;
+
+  font-size: 0.8rem;
+}
+
+
+#profile-card > img{
+  width: 15%;
+  border-radius: 100%;
+}
+
+#profile-card-details{
+  padding-left: 1rem;
+}
+
+#profile-card-details > h1{
+  font-size: 0.8rem;
+}
+
+
+#advertisment{
+  width: 75%;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+
+#advertisment > iframe{
+  width:  100%;
+  border-radius: 4px;
+}
+
+
+#call-to-action{
+  background: var(--primary-desaturated-blue);
+  color: white;
+  padding: 4rem 2rem;
+}
+
+#call-to-action > article{
+  text-align: center;
+}
+
+#call-to-action article > header , p{
+  margin-bottom: 1rem;
+}
+
+#call-to-action #form > button{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: white;
+  background: var(--accent-bright-blue);
+
+  border: none;
+  border-radius: 4px;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+}
+
+#call-to-action #form > button:hover{
+  background: var(--accent-bright-blue-active);
+}
+
+footer{
+  background: var(--primary-very-dark-blue);
+  padding: 4rem;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#contacts > figure{
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer > img{
+  width: 50%;
+  margin-bottom: 1.5rem;
+}
+
+#contacts figure > figcaption{
+  padding-left: 2rem;
+}
+
+
+#pages{
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+footer section > a{
+  color: white;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+footer section a:hover{
+  color: var(--primary-very-dark-blue-active);
+}
+#wrapper{
+  width: 100%;
+}
+
+.social-media{
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 1rem;
+  margin-top: 4rem;
+}
+
+.social-media-icons {
+  display: flex;
+}
+
+.social-media-icons > i{
+  padding: 0.5rem;
+  border-radius: 100%;
+  border: 1px solid white;
+  text-align: center;
+  color: white;
+}
+
+.social-media-icons > i:hover{
+  border: 1px solid var(--primary-very-dark-blue-active);
+  color: var(--primary-very-dark-blue-active);
+}
+
+@media (min-width: 1080px){
+    #header{
+      padding: 1rem;
+    }
+
+    #header > img{
+      width: 15%;
+    }
+
+    #nav-bar{
+      width: 25%;
+    }
+
+    .hero{
+      width: 95%;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row-reverse;
+      margin-bottom: 10rem;
+    }
+
+    .hero figure {
+      width: 45%;
+    }
+    .hero figure > img{
+      max-width: 100%;
+      object-fit: cover;
+    }
+
+    #details{
+      width: 40%;
+      text-align: start;
+    }
+
+    #details header > h1{
+      font-size: 2.3rem;
+      margin-bottom: 1rem;
+    }
+
+    #details > p{
+      font-size: 1.1rem;
+      margin-bottom: 1.2rem;
+    }
+
+    #details > #form{
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+    }
+
+    
+    #details #form #email{
+      padding: 0.6rem;
+      width: 60%;
+      margin-bottom: 0;
+    }
+    
+    #details form #submit{
+      padding: 0.7rem;
+      width: 35%;
+    }
+
+    #border{
+      width: 100%;
+    }
+
+    #secondary-hero{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row-reverse;
+    }
+ 
+    #secondary-hero figure > img{
+      margin: auto;
+      width: 80%;
+    }
+
+    .left{
+      width: 70%;
+    }
+
+    #secondary-details header > h1{
+      text-align: start;
+      font-size: 2.5rem;
+    }
+
+    #secondary-details > p{
+      font-size: 1.1rem;
+      width: 90%;
+    }
+
+    #secondary-link{
+      font-size: 1.2rem;
+      width: 35%;
+      margin: 0;
+    }
+
+
+    #testimonial{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: row;
+    }
+
+    .testimonial-card{
+      width: 45%;
+      margin: 0;
+    }
+
+    #advertisment{
+      width: 45%;
+      margin: 0;
+    }
+
+    #call-to-action{
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-direction: row;
+    }
+    
+    #call-to-action > article{
+      width: 36%;
+      text-align: start;
+    }
+    
+    #call-to-action header > h1{
+      font-size: 2rem;
+    }
+
+    #call-to-action > p{
+      font-size: 1.1rem;
+    }
+
+
+    #call-to-action form {
+      width: 40%;
+    }
+
+    #call-to-action #email{
+      font-size: 1.3rem;
+      padding: 0.5rem;
+    }
+
+    .btns{
+      font-size: 1.5rem;
+    }
+    #btn-submit{
+      width: 50%;
+      padding: 1rem;
+    }
+
+    #footer-logo{
+      width: 15%;
+    }
+
+    #wrapper{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    #pages{
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    }
+
+    .social-media{
+      margin: 0%;
+      max-width: 20%;
+    }
+}
