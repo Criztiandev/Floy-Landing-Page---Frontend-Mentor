@@ -191,6 +191,9 @@ body{
 }
 
 
+#border{
+  width: 100%;
+}
 
 #secondary-hero{
   background: var(--neutral-light-gray-blue);
@@ -478,10 +481,6 @@ footer section a:hover{
     #details form #submit{
       padding: 0.7rem;
       width: 35%;
-    }
-
-    #border{
-      width: 100%;
     }
 
     #secondary-hero{
