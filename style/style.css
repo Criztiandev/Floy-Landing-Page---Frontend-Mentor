@@ -190,7 +190,6 @@ body{
   background: var(--accent-bright-blue-active);
 }
 
-
 #border{
   width: 100%;
 }
@@ -511,7 +510,7 @@ footer section a:hover{
 
     #secondary-link{
       font-size: 1.2rem;
-      width: 35%;
+      width: 40%;
       margin: 0;
     }
 
@@ -524,7 +523,7 @@ footer section a:hover{
     }
 
     .testimonial-card{
-      width: 45%;
+      width: 50;
       margin: 0;
     }
 
